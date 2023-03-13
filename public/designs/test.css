@@ -34,7 +34,7 @@ body {
     background:#24252590;
     max-width: 80%;
     margin-left: 8%;
-    margin-right: 8%;
+    margin-right: 22%;
 }
 
 #chat {
@@ -189,7 +189,6 @@ body {
 }
 
 .mes_text {
-    color:aliceblue;
     font-weight: 500;
     margin-left: 0px;
     max-width: 100%;
@@ -197,7 +196,6 @@ body {
 
 .ch_name {
     margin-left: 0px;
-    color:aliceblue;
 }
 .mes_text strong {
     color: lightseagreen;
@@ -382,7 +380,7 @@ code {
     padding: 0px;
     font-family: Consolas, monospace;
     color: #11c98c;
-    /*filter: drop-shadow(2px 2px 6px #23e98e);*/
+    filter: drop-shadow(2px 2px 6px #23e98e);
 }
 /*box for code*/
 pre {
@@ -392,14 +390,12 @@ pre {
     background-color: #222222ff;
     color: mintcream;
     filter: drop-shadow(0px 0px 1px #23e98e);
-
 }
 /*code inside box*/
 pre code {
     padding-bottom: 5px;
     color: mintcream;
     filter: drop-shadow(0px 0px 1px #23e98e);
-
 }
 /*compact messages*/
 .mes_text p{
@@ -411,14 +407,12 @@ pre code {
     width: 0px;
 }
 .bg_example_but_load img{
-    position: absolute;
-    z-index: -1000;
+    /* position: absolute; */
+    /* z-index: -1000; */
     height: 0px;
     width: 0px;
 }
 .input-file{
-    position: absolute;
-    z-index: -1000;
     height: 0px;
     width: 0px;
 }
@@ -459,12 +453,50 @@ pre code {
 }
 #bg_menu_content{
     background: rgba(26,24,25,0.8);
+    filter: none;
 }
 /*searchbox*/
 .textarea,input.text_pole  {
-    background-color: rgba(26,24,25,1);
+    background-color: rgba(16,16,16,1);
     color: aliceblue;
 }
-.textarea,input.text_pole::placeholder  {
-    color: aliceblue;
+
+/*ordered list */
+ol {
+    border: 1px solid black;
+    padding: 0px;
+    padding-bottom: 5px;
+    background-color: #222222ff;
+    filter: drop-shadow(0px 0px 1px #238ee9);
+    list-style-position: inside;
+}
+ol li{
+    padding-left: 5px;
+    color: #238ee9;
+    filter: drop-shadow(2px 2px 1px #ffffff44);
+}
+/*ordered list */
+ul {
+    border: 1px solid black;
+    padding: 0px;
+    padding-bottom: 5px;
+    background-color: #222222ff;
+    filter: drop-shadow(0px 0px 1px #238ee9);
+    list-style-position: inside;
+}
+ul li{
+    padding-left: 5px;
+    color: #238ee9;
+    filter: drop-shadow(2px 2px 1px #ffffff44);
+}
+/*global stuff*/
+* {
+    color:aliceblue;
+    filter: drop-shadow(4px 3px 1px #00000055);
+    font-size: 15px;
+}
+
+.right_menu {
+    max-height: 90%;
+}
 }

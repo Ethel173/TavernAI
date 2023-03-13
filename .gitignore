@@ -8,3 +8,4 @@ public/chats/*
 uploads/*
 public/settings.json
 .vscode/launch.json
+.vscode/settings.json
